@@ -69,8 +69,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
-    			
             
 		</nav>
 		<nav class="header-nav">
@@ -150,7 +148,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/06/Effective-Ruby-要点回顾汇总/">Effective Ruby 要点回顾汇总</a>
+      <a class="article-title" href="/2017/01/06/Effective-Ruby-要点回顾汇总/">Effective Ruby 要点回顾汇总(持续更新中)</a>
     </h1>
   
 
@@ -174,8 +172,11 @@
 <li>在适合的时候使用转换方法，如<code>to_s</code>和<code>to_i</code>，可以将<code>nil</code>对象强制转换为你期待的类型。</li>
 <li><code>Array#compact</code>方法返回去除所有<code>nil</code>元素的接受者的副本。</li>
 </ul>
-        
-          <a class="article-more-a" href="/2017/01/06/Effective-Ruby-要点回顾汇总/#more">more >></a>
+<h2 id="3-避免使用Ruby中古怪的Perl风格语法"><a href="#3-避免使用Ruby中古怪的Perl风格语法" class="headerlink" title="3.避免使用Ruby中古怪的Perl风格语法"></a>3.避免使用Ruby中古怪的Perl风格语法</h2><ul>
+<li>推荐使用<code>String#match</code>替代<code>String#=~</code>。前者将匹配信息以<code>MatchData</code>对象返回，而非几个特殊的全局变量。</li>
+<li>使用更长、更能表意的全局变量的别名，而非其短的、古怪的名字（比如，用<code>$LOAD_PATH</code>替代<code>$:</code>）。大多数长的名字需要在加载库English之后才能使用。</li>
+<li>避免使用隐式读写全局变量<code>$_</code>的方法（比如，<code>Kernel#print</code>、<code>Regexp#~</code>等）。</li>
+</ul>
         
       
 
@@ -283,8 +284,6 @@
       
     
       
-      
-      
     
     
 
@@ -292,15 +291,13 @@
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -381,12 +378,6 @@
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
-    	</section>
     
   </div>
   

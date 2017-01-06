@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Effective Ruby 要点回顾汇总 | FoxZhao</title>
+  <title>Effective Ruby 要点回顾汇总(持续更新中) | FoxZhao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.理解Ruby中的True
 除了false和nil外所有值都表示真值。
@@ -18,7 +18,7 @@
 如果方法接受者是nil，nil?方法返回真值，反之为假。
 在适合的时候使用转换方法，如to_s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Effective Ruby 要点回顾汇总">
+<meta property="og:title" content="Effective Ruby 要点回顾汇总(持续更新中)">
 <meta property="og:url" content="http://yoursite.com/2017/01/06/Effective-Ruby-要点回顾汇总/index.html">
 <meta property="og:site_name" content="FoxZhao">
 <meta property="og:description" content="1.理解Ruby中的True
@@ -30,9 +30,9 @@
 根据Ruby的类型系统运作方式，任何对象都可以为nil。
 如果方法接受者是nil，nil?方法返回真值，反之为假。
 在适合的时候使用转换方法，如to_s">
-<meta property="og:updated_time" content="2017-01-06T08:51:09.000Z">
+<meta property="og:updated_time" content="2017-01-06T09:09:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Effective Ruby 要点回顾汇总">
+<meta name="twitter:title" content="Effective Ruby 要点回顾汇总(持续更新中)">
 <meta name="twitter:description" content="1.理解Ruby中的True
 除了false和nil外所有值都表示真值。
 和很多语言不同，Ruby中的0值是真值。
@@ -96,8 +96,6 @@
     			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -176,7 +174,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Effective Ruby 要点回顾汇总
+      Effective Ruby 要点回顾汇总(持续更新中)
     </h1>
   
 
@@ -200,12 +198,12 @@
 <li>在适合的时候使用转换方法，如<code>to_s</code>和<code>to_i</code>，可以将<code>nil</code>对象强制转换为你期待的类型。</li>
 <li><code>Array#compact</code>方法返回去除所有<code>nil</code>元素的接受者的副本。</li>
 </ul>
-<a id="more"></a>
 <h2 id="3-避免使用Ruby中古怪的Perl风格语法"><a href="#3-避免使用Ruby中古怪的Perl风格语法" class="headerlink" title="3.避免使用Ruby中古怪的Perl风格语法"></a>3.避免使用Ruby中古怪的Perl风格语法</h2><ul>
 <li>推荐使用<code>String#match</code>替代<code>String#=~</code>。前者将匹配信息以<code>MatchData</code>对象返回，而非几个特殊的全局变量。</li>
 <li>使用更长、更能表意的全局变量的别名，而非其短的、古怪的名字（比如，用<code>$LOAD_PATH</code>替代<code>$:</code>）。大多数长的名字需要在加载库English之后才能使用。</li>
 <li>避免使用隐式读写全局变量<code>$_</code>的方法（比如，<code>Kernel#print</code>、<code>Regexp#~</code>等）。</li>
 </ul>
+<a id="more"></a>
 <h2 id="4-留神，常量是可变的"><a href="#4-留神，常量是可变的" class="headerlink" title="4.留神，常量是可变的"></a>4.留神，常量是可变的</h2><ul>
 <li>总是将常量冻结，从而防止其被改变。</li>
 <li>如果常量引用了一个集合对象比如数组或散列，那么冻结这个集合及其所有元素。</li>
@@ -411,8 +409,6 @@
       
     
       
-      
-      
     
     
 
@@ -420,15 +416,13 @@
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -509,12 +503,6 @@
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
-    	</section>
     
   </div>
   
