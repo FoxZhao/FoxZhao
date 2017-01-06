@@ -6,14 +6,42 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/1 | FoxZhao</title>
+  <title>Effective Ruby 要点回顾汇总 | FoxZhao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="FoxZhao">
-<meta property="og:url" content="http://yoursite.com/archives/2017/01/index.html">
+  <meta name="description" content="1.理解Ruby中的True
+除了false和nil外所有值都表示真值。
+和很多语言不同，Ruby中的0值是真值。
+如果你需要区分false和nil，可以使用nil?方法或==操作符并将false作为左操作对象。
+
+2.所有对象的值都可能为nil
+根据Ruby的类型系统运作方式，任何对象都可以为nil。
+如果方法接受者是nil，nil?方法返回真值，反之为假。
+在适合的时候使用转换方法，如to_s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Effective Ruby 要点回顾汇总">
+<meta property="og:url" content="http://yoursite.com/2017/01/06/Effective-Ruby-要点回顾汇总/index.html">
 <meta property="og:site_name" content="FoxZhao">
+<meta property="og:description" content="1.理解Ruby中的True
+除了false和nil外所有值都表示真值。
+和很多语言不同，Ruby中的0值是真值。
+如果你需要区分false和nil，可以使用nil?方法或==操作符并将false作为左操作对象。
+
+2.所有对象的值都可能为nil
+根据Ruby的类型系统运作方式，任何对象都可以为nil。
+如果方法接受者是nil，nil?方法返回真值，反之为假。
+在适合的时候使用转换方法，如to_s">
+<meta property="og:updated_time" content="2017-01-06T08:51:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FoxZhao">
+<meta name="twitter:title" content="Effective Ruby 要点回顾汇总">
+<meta name="twitter:description" content="1.理解Ruby中的True
+除了false和nil外所有值都表示真值。
+和很多语言不同，Ruby中的0值是真值。
+如果你需要区分false和nil，可以使用nil?方法或==操作符并将false作为左操作对象。
+
+2.所有对象的值都可能为nil
+根据Ruby的类型系统运作方式，任何对象都可以为nil。
+如果方法接受者是nil，nil?方法返回真值，反之为假。
+在适合的时候使用转换方法，如to_s">
   
     <link rel="alternative" href="/atom.xml" title="FoxZhao" type="application/atom+xml">
   
@@ -141,36 +169,100 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Effective-Ruby-要点回顾汇总" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/06/Effective-Ruby-要点回顾汇总/" class="archive-article-date">
-  	<time datetime="2017-01-06T08:47:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/06/Effective-Ruby-要点回顾汇总/">Effective Ruby 要点回顾汇总</a>
+    <h1 class="article-title" itemprop="name">
+      Effective Ruby 要点回顾汇总
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/01/06/Effective-Ruby-要点回顾汇总/" class="archive-article-date">
+  	<time datetime="2017-01-06T08:47:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-理解Ruby中的True"><a href="#1-理解Ruby中的True" class="headerlink" title="1.理解Ruby中的True"></a>1.理解Ruby中的True</h2><ul>
+<li>除了<code>false</code>和<code>nil</code>外所有值都表示真值。</li>
+<li>和很多语言不同，Ruby中的<code>0</code>值是真值。</li>
+<li>如果你需要区分<code>false</code>和<code>nil</code>，可以使用<code>nil?</code>方法或<code>==</code>操作符并将<code>false</code>作为左操作对象。</li>
+</ul>
+<h2 id="2-所有对象的值都可能为nil"><a href="#2-所有对象的值都可能为nil" class="headerlink" title="2.所有对象的值都可能为nil"></a>2.所有对象的值都可能为nil</h2><ul>
+<li>根据Ruby的类型系统运作方式，任何对象都可以为<code>nil</code>。</li>
+<li>如果方法接受者是<code>nil</code>，<code>nil?</code>方法返回真值，反之为假。</li>
+<li>在适合的时候使用转换方法，如<code>to_s</code>和<code>to_i</code>，可以将<code>nil</code>对象强制转换为你期待的类型。</li>
+<li><code>Array#compact</code>方法返回去除所有<code>nil</code>元素的接受者的副本。</li>
+</ul>
+<a id="more"></a>
+<h2 id="3-避免使用Ruby中古怪的Perl风格语法"><a href="#3-避免使用Ruby中古怪的Perl风格语法" class="headerlink" title="3.避免使用Ruby中古怪的Perl风格语法"></a>3.避免使用Ruby中古怪的Perl风格语法</h2><ul>
+<li>推荐使用<code>String#match</code>替代<code>String#=~</code>。前者将匹配信息以<code>MatchData</code>对象返回，而非几个特殊的全局变量。</li>
+<li>使用更长、更能表意的全局变量的别名，而非其短的、古怪的名字（比如，用<code>$LOAD_PATH</code>替代<code>$:</code>）。大多数长的名字需要在加载库English之后才能使用。</li>
+<li>避免使用隐式读写全局变量<code>$_</code>的方法（比如，<code>Kernel#print</code>、<code>Regexp#~</code>等）。</li>
+</ul>
+<h2 id="4-留神，常量是可变的"><a href="#4-留神，常量是可变的" class="headerlink" title="4.留神，常量是可变的"></a>4.留神，常量是可变的</h2><ul>
+<li>总是将常量冻结，从而防止其被改变。</li>
+<li>如果常量引用了一个集合对象比如数组或散列，那么冻结这个集合及其所有元素。</li>
+<li>要防止常量被重新赋值，可以冻结定义它的那个模块。</li>
+</ul>
+<h2 id="5-留意运行时警告"><a href="#5-留意运行时警告" class="headerlink" title="5.留意运行时警告"></a>5.留意运行时警告</h2><ul>
+<li>使用命令行选项<code>-w</code>来运行Ruby解释器以启动编译时和运行时的警告。设置环境变量<code>RUBYOPT</code>为<code>-w</code>也可以达到相同目的。</li>
+<li>如果必须禁用运行时的警告，可以临时将全局变量<code>$VERBOSE</code>设置为<code>nil</code>。</li>
+</ul>
+<h2 id="6-了解Ruby如何构建继承体系"><a href="#6-了解Ruby如何构建继承体系" class="headerlink" title="6.了解Ruby如何构建继承体系"></a>6.了解Ruby如何构建继承体系</h2><ul>
+<li>要寻找一个方法，Ruby只需要向上搜索类体系。如果没有找到这个方法，就从起点开始搜索<code>method_missing</code>方法。</li>
+<li>包含模块时Ruby会悄悄地创建单例类，并将其插入在继承体系中包含它的类的上方。</li>
+<li>单例方法（类方法和针对对象的方法）储存在单例类中，它也会被插入继承体系中。</li>
+</ul>
+<h2 id="7-了解super的不同行为"><a href="#7-了解super的不同行为" class="headerlink" title="7.了解super的不同行为"></a>7.了解super的不同行为</h2><ul>
+<li>当你想重载继承体系中的一个方法时，关键字<code>super</code>可以帮你调用它。</li>
+<li>不加括号地无参调用<code>super</code>等价于将宿主方法的所有参数传递给要调用的方法。</li>
+<li>如果希望使用<code>super</code>并且不向重载方法传递任何参数，必须使用空括号，即<code>super()</code>。</li>
+<li>当<code>super</code>调用失败时，自定义的<code>method_missing</code>方法将丢弃一些有用的信息。在第30条中有<code>method_missing</code>的替代解决方案。</li>
+</ul>
+<h2 id="8-初始化子类时调用super"><a href="#8-初始化子类时调用super" class="headerlink" title="8.初始化子类时调用super"></a>8.初始化子类时调用super</h2><ul>
+<li>当创建子类对象时，Ruby不会自动调用超类中的<code>initialize</code>方法。作为替代，常规的方法查询规则也适用于<code>initialize</code>方法，只有第一个匹配的副本会被调用。</li>
+<li>当为显式使用继承的类定义<code>initialize</code>方法时，使用<code>super</code>来初始化其父类。在定义<code>initialize_copy</code>方法时，应使用相同的规则。</li>
+</ul>
+<h2 id="9-提防Ruby最棘手的解析"><a href="#9-提防Ruby最棘手的解析" class="headerlink" title="9.提防Ruby最棘手的解析"></a>9.提防Ruby最棘手的解析</h2><ul>
+<li><code>setter</code>方法在调用时需要显式的接收者。没有接收者时，会被Ruby解析为变量赋值。</li>
+<li>在实例方法中调用<code>setter</code>方法时，使用<code>self</code>作为接收者。</li>
+<li>在调用<code>非setter</code>方法时，不需要显式指定接收者。换句话说，不要使用不必要的<code>self</code>，那会弄乱你的代码。</li>
+</ul>
+<h2 id="10-推荐使用Struct而非Hash存储结构化数据"><a href="#10-推荐使用Struct而非Hash存储结构化数据" class="headerlink" title="10.推荐使用Struct而非Hash存储结构化数据"></a>10.推荐使用Struct而非Hash存储结构化数据</h2><ul>
+<li>在处理结构化数据时，如果创建一个新类不那么合适时，推荐使用<code>Struct</code>而非<code>Hash</code>。</li>
+<li>将<code>Struct::new</code>的返回值赋给常量，并像类一样使用它。</li>
+</ul>
+<h2 id="11-通过在模块中嵌入代码来创建命名空间"><a href="#11-通过在模块中嵌入代码来创建命名空间" class="headerlink" title="11.通过在模块中嵌入代码来创建命名空间"></a>11.通过在模块中嵌入代码来创建命名空间</h2><ul>
+<li>通过在模块中嵌入代码来创建命名空间。</li>
+<li>让你的命名空间结构和目录结构相同。</li>
+<li>如果使用时可能出现歧义，可使用“::”来限定顶级常量（比如，<code>::Array</code>）。</li>
+</ul>
+<h2 id="12-理解等价的不同方法"><a href="#12-理解等价的不同方法" class="headerlink" title="12.理解等价的不同方法"></a>12.理解等价的不同方法</h2><ul>
+<li>绝不要重载<code>equal?</code>方法。该方法的预期行为是，严格比较两个对象，仅当它们同时指向内存中同一对象时其值为真（即，当它们具有相同的object_id时）。</li>
+<li>Hash类在冲突检测时使用<code>eql?</code>方法来比较键对象。默认实现可能和你想象不同。遵循第13条的建议之后再使用别名<code>eql?</code>来替代<code>==</code>书写更合理的hash方法。</li>
+<li>使用<code>==</code>操作符来测试两个对象是否表示相同的值。有些类比如表示数字的类会有一个粗糙的等号操作符进行类型转换。</li>
+<li><code>case</code>表达式使用<code>===</code>操作符来测试每个<code>when</code>语句的值。左操作数是<code>when</code>的参数，右操作数是<code>case</code>的参数。</li>
+</ul>
+<h2 id="13-通过“-lt-gt-”操作符实现比较和比较模块"><a href="#13-通过“-lt-gt-”操作符实现比较和比较模块" class="headerlink" title="13.通过“&lt;=&gt;”操作符实现比较和比较模块"></a>13.通过“&lt;=&gt;”操作符实现比较和比较模块</h2><ul>
+<li>通过定义<code>&lt;=&gt;</code>操作符和引入<code>Comparable</code>模块实现对象的排序。</li>
+<li>如果左操作数不能与右操作数进行比较，<code>&lt;=&gt;</code>操作符应该返回<code>nil</code>。</li>
+<li>如果要实现类的<code>&lt;=&gt;</code>运算符，应该考虑将将<code>eql?</code>方法设置为<code>==</code>操作符的别名，特别是当你希望该类的所有实例可以被用来作为哈希键的时候，就应该重载哈希方法。</li>
+</ul>
+<h2 id="14-通过protected方法共享私有状态"><a href="#14-通过protected方法共享私有状态" class="headerlink" title="14.通过protected方法共享私有状态"></a>14.通过protected方法共享私有状态</h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -182,19 +274,78 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/01/06/Effective-Ruby-要点回顾汇总/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+
+
+
+
+  
+    <div class="duoshuo"></div>
+  
+
+
 
 
           </div>
@@ -217,8 +368,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
